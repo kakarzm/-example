@@ -1,0 +1,15 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: service-neo
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8091/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    #instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+
+
